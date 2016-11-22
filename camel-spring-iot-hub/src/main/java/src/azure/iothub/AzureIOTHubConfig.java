@@ -29,7 +29,7 @@ public class AzureIOTHubConfig {
     @Autowired
     private AzureRouteBuilder routeBuilder;
 
-    @Value("${servicebus.propertyFile.path:/home/cov-127/servicebus_new.properties}")
+    @Value("${servicebus.propertyFile.path:/home/vivek/servicebus_new.properties}")
     private String servicebusPropertyFilePath;
 
     @Bean(name = "UriTemplate")
@@ -49,7 +49,7 @@ public class AzureIOTHubConfig {
             context = new InitialContext(env);
             // Look up ConnectionFactory and Queue
             cf = (ConnectionFactory) context.lookup("SBCF");
-            Destination rawParameterQueue = (Destination) context.lookup("RAW_PARAMETER_QUEUE");
+            Destination rawParameterQueue = (Destination) context.lookup("QUEUE_1");
         } catch (NamingException e) {
             e.printStackTrace();
         }
