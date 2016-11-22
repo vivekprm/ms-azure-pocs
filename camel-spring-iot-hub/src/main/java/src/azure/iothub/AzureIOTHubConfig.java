@@ -19,7 +19,7 @@ import javax.naming.NamingException;
 import java.util.Hashtable;
 
 /**
- * Created by cov-127 on 22/11/16.
+ * Created by vivek on 22/11/16.
  */
 @Configuration
 public class AzureIOTHubConfig {
@@ -29,7 +29,7 @@ public class AzureIOTHubConfig {
     @Autowired
     private AzureRouteBuilder routeBuilder;
 
-    @Value("${servicebus.propertyFile.path:/home/vivek/servicebus_new.properties}")
+    @Value("${servicebus.propertyFile.path:/home/vivek/servicebus.properties}")
     private String servicebusPropertyFilePath;
 
     @Bean(name = "UriTemplate")
