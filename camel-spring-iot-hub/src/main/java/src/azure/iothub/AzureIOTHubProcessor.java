@@ -6,7 +6,7 @@ import org.apache.camel.Exchange;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by cov-127 on 22/11/16.
+ * Created by vivek on 22/11/16.
  */
 @Component
 public class AzureIOTHubProcessor implements AsyncProcessor {
